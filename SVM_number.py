@@ -91,6 +91,8 @@ def AddTranslation(Img1):
             Shift = numpy.vstack((Shift,tmp.reshape(nx2, order = 'F')))
     return Shift
 
+
+
 def ShrinkWriting(Img1):
     nx = numpy.sqrt(Img1.shape[0]).astype(int)
     tmp = Img1.reshape(nx, nx)[::2, 1::2]
