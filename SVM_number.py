@@ -3,6 +3,8 @@ import numpy
 from sklearn import svm
 from matplotlib import pylab
 
+
+
 data = scipy.io.loadmat("data.mat")
 HandWriting = data['X']
 TrueVal = data['y'][:,0]
